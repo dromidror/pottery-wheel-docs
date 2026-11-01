@@ -4,8 +4,7 @@ site_description: >-
   and casting molds for 3D printing and slip casting. One guide for the Android and
   macOS apps.
 site_author: Pottery Wheel
-# Set this to the published GitHub Pages URL once the repo/Pages are configured:
-# site_url: https://dromidror.github.io/pottery-wheel-docs/
+site_url: https://dromidror.github.io/pottery-wheel-docs/
 
 # --- Repository (edit links) ---
 repo_name: dromidror/pottery-wheel-docs
