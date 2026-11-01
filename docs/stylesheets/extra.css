@@ -1,0 +1,30 @@
+/* Pottery Wheel docs — small visual tweaks. */
+
+/* Centered figure captions for screenshots/animations. */
+figure {
+  text-align: center;
+  margin: 1.2rem 0;
+}
+figure img {
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  max-width: 100%;
+}
+figcaption {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.4rem;
+}
+
+/* Inline platform badges, e.g. <span class="badge android">Android</span>. */
+.badge {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+.badge.android { background: #3ddc84; color: #053d1f; }
+.badge.macos   { background: #e0e0e0; color: #222; }

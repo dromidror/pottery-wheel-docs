@@ -1,0 +1,112 @@
+site_name: Pottery Wheel — User Guide
+site_description: >-
+  Design tableware, add handles, lids, stamps and reliefs, and export STL models
+  and casting molds for 3D printing and slip casting. One guide for the Android and
+  macOS apps.
+site_author: Pottery Wheel
+# Set this to the published GitHub Pages URL once the repo/Pages are configured:
+# site_url: https://dromidror.github.io/pottery-wheel-docs/
+
+# --- Repository (edit links) ---
+repo_name: dromidror/pottery-wheel-docs
+repo_url: https://github.com/dromidror/pottery-wheel-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant      # fast SPA-style navigation
+    - navigation.tracking     # update URL with the active anchor
+    - navigation.tabs         # top-level chapters as tabs
+    - navigation.sections
+    - navigation.top          # back-to-top button
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link       # link platform tabs across the page
+    - toc.follow
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode (matches the app's dark theme)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  # Per-page "was this helpful" and platform note styling live in extra.css.
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition               # Tip / Note / Warning callouts
+  - pymdownx.details         # collapsible callouts
+  - pymdownx.superfences      # code fences + mermaid diagrams
+  - pymdownx.tabbed:          # Android / macOS tabbed content
+      alternate_style: true
+  - pymdownx.emoji
+  - pymdownx.keys            # render key combos like ++cmd+s++
+  - attr_list                # image sizing/attributes
+  - md_in_html               # figures with captions
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  # - glightbox              # (optional) click-to-zoom screenshots; add to requirements first
+
+# --- Table of contents / chapters ---
+nav:
+  - Home: index.md
+  - Getting started:
+      - Overview: getting-started/overview.md
+      - Install & open: getting-started/install.md
+      - The workspace: getting-started/workspace.md
+      - Your first piece: getting-started/first-piece.md
+  - Designing shapes:
+      - Profile editor: designing/profile-editor.md
+      - Curved axis: designing/curved-axis.md
+      - Cross-section: designing/cross-section.md
+      - Units & measurements: designing/units.md
+  - Building objects:
+      - Templates & parts: building/templates.md
+      - Connecting parts: building/connections.md
+      - Galleries & lids: building/galleries.md
+  - Stamps & reliefs:
+      - Overview: stamps/overview.md
+      - Text stamps: stamps/text.md
+      - STL reliefs: stamps/reliefs.md
+      - Placing & scaling: stamps/placing.md
+  - Exporting & printing:
+      - Export STL: exporting/stl.md
+      - Scale & bed fit: exporting/scale.md
+      - Molds & slip casting: exporting/molds.md
+  - Saving & settings:
+      - Save & open: files/save-open.md
+      - Settings: files/settings.md
+  - Cookbook:
+      - Cookbook index: cookbook/index.md
+      - Make a mug with a handle: cookbook/mug-with-handle.md
+      - Make a lidded teapot: cookbook/teapot.md
+      - Add a monogram stamp: cookbook/monogram.md
+      - Make a slip-casting mold: cookbook/casting-mold.md
+  - Reference:
+      - Troubleshooting & FAQ: reference/troubleshooting.md
+      - Platform differences: reference/platforms.md
+      - Glossary: reference/glossary.md
