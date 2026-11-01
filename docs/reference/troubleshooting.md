@@ -25,8 +25,15 @@
     scale with the corner handles.
 
 ??? question "How do I resize a stamp?"
-    Open the stamp editor and drag a **corner handle** of the relief box, or pinch to scale.
-    See [Placing & scaling](../stamps/placing.md).
+    Select it in the **3D** view and drag a **corner handle** of its selection box — on
+    Android with a touch drag, on macOS with a click drag (a plain drag on the body moves
+    the stamp instead). You can also use the size slider in the stamp editor, or pinch on
+    Android. See [Placing & scaling](../stamps/placing.md).
+
+??? question "A recessed stamp doesn't print as a carved-in mark"
+    A recessed stamp currently shows pressed into the surface on screen, but it isn't yet
+    cut out of the wall in the exported STL, so it won't print as a true incised cavity.
+    **Raised** stamps print correctly. This is a known limitation being worked on.
 
 ## Files
 

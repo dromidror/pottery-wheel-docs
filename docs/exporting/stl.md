@@ -6,6 +6,8 @@ Use **Export Prototype** to write an STL of the object. If the object has separa
 (e.g. a teapot's body and lid), a dialog lets you choose which pieces to include; each is
 laid out as its own printable solid.
 
+- **Stamps are included**: text and relief decorations are merged into the piece they sit
+  on, so they print as part of the ware.
 - Mesh errors are repaired automatically so the result is watertight.
 - A progress spinner shows while the STL is built.
 

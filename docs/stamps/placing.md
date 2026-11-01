@@ -9,12 +9,21 @@ In the **3D** view, drag the stamp to move it:
 - **Around** the body changes its angle.
 
 ## Scale
-Open the stamp editor and use the **relief box** — drag a **corner handle** to resize, or
-pinch to scale. The stamp updates live in the 3D view.
+Select the stamp in the **3D** view: a selection box appears with **corner handles**. Drag
+a corner handle to resize the stamp — it scales from its center and updates live on the
+surface.
+
+=== "Android"
+    Touch and drag a **corner handle**. (You can also open the stamp editor and use the size
+    slider, or pinch to scale.)
+
+=== "macOS"
+    Click and drag a **corner handle**. A plain drag on the stamp body moves it instead; no
+    modifier key is needed to resize.
 
 <figure markdown>
   ![Animation: dragging a corner handle to resize the relief](../assets/animations/relief-resize.gif){ width="620" }
-  <figcaption>Resizing a relief by its corner handles.</figcaption>
+  <figcaption>Resizing a stamp by its corner handles in the 3D view.</figcaption>
 </figure>
 
 ## Rotate
